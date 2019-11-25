@@ -1,0 +1,71 @@
+.heading {
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-family: $heading-font-stack;
+
+  &--light {
+    color: $superlight-grey;
+
+    &::after {
+      content: url('../images/zigzag-light.svg');
+    }
+  }
+
+  &--dark {
+    color: $dark-grey;
+
+    &::after {
+      content: url('../images/zigzag.svg');
+    }
+  }
+
+  &::after {
+    display: block;
+    padding-top: 10px;
+  }
+}
+
+.blockquote {
+  font-family: $text-font-stack;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 32px;
+  font-weight: 300;
+  color: $light-grey;
+  padding-left: 120px;
+  text-align: right;
+  margin: 0;
+}
+
+.paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+
+  &--style1 {
+    color: $mid-grey;
+  }
+
+  &--style2 {
+    color: $superlight-grey;
+  }
+}
+
+.link {
+  text-decoration: none;
+
+  &--grey {
+    color: $light-grey;
+    transition: color ease-in-out 0.2s;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+}

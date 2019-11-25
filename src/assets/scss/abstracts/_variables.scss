@@ -1,0 +1,31 @@
+// Fonts
+
+$text-font-stack: 'Roboto', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$heading-font-stack: 'Montserrat', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+
+// Colors
+
+$brand-color: #D01F25;
+$brand-color-darker: #b31b25;
+$secondary-color: #192940;
+$secondary-color-darker: #010c14;
+
+$superlight-grey: #ffffff;
+$light-grey: #999999;
+$mid-grey: #666666;
+$dark-grey: #444444;
+
+
+// Lines & separators
+
+$thin-line: #ededed;
+
+
+// Breakpoints map
+
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+);

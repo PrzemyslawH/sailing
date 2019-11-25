@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 4" width="48" height="4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d01f25;
+      }
+    </style>
+  </defs>
+  <path id="zigzag" data-name="zigzag" class="cls-1" d="M795,131v-.987l6,2.981v.988Zm-6,1.987,6-3v1l-6,3ZM783,131v-.987l6,2.981v.988Zm-6,1.987,6-3v1l-6,3ZM771,131v-.987l6,2.981v.988Zm-6,1.987,6-3v1l-6,3ZM759,131v-.987l6,2.981v.988Zm-6,1.987,6-3v1l-6,3Z" transform="translate(-753 -129.981)"/>
+</svg>

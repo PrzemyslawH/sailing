@@ -1,0 +1,19 @@
+.btn {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $heading-font-stack;
+  border: none;
+  padding: 24px 64px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+
+  &--primary {
+    color: $superlight-grey;
+    background: $brand-color;
+
+    &:hover {
+      background: $brand-color-darker;
+    }
+  }
+}

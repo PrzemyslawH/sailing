@@ -1,0 +1,43 @@
+.footer {
+  background-color: #f7f7f7;
+  padding-bottom: 0;
+
+  &__grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 50% 1fr 1fr;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: $heading-font-stack;
+  }
+
+  &__list {
+    margin: 30px 0;
+    padding: 0;
+
+    &__item {
+      list-style-type: none;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+  }
+
+  &__copyrights {
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    color: #c0c0c0;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact-details {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

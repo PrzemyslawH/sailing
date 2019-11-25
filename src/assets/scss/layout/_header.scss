@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+  height: 100px;
+  font-family: $heading-font-stack;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  &__background {
+    z-index: 2;
+    width: 270px;
+    height: 200px;
+    clip-path: polygon(0 0, 270px 0, 270px 160px, 0 200px);
+    background-color: rgb(25, 41, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      transform: translateY(-10px);
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    margin-left: 10px;
+    text-align: center;
+    width: 270px;
+    height: 110px;
+    clip-path: polygon(0 0, 270px 0, 270px 70px, 0 110px);
+    background-color: rgba(25, 41, 64, 0.2);
+  }
+}
+
+.main-menu {
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  &__item {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 44px 30px 0;
+  }
+
+  &__link {
+    color: rgb(68, 68, 68);
+    display: block;
+    position: relative;
+
+    &::after {
+      content: url('../images/zigzag.svg');
+      position: absolute;
+      display: block;
+      bottom: -15px;
+      left: calc(50% - 26px);
+      opacity: 0;
+      -webkit-transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    &:hover::after {
+      transform: translateY(5px);
+      opacity: 1;
+    }
+  }
+}

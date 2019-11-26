@@ -1,5 +1,5 @@
 .slider {
-  background: url('../images/slider-bg.jpg') no-repeat center;
+  background: url('../assets/images/slider-bg.jpg') no-repeat center;
   height: 700px;
   font-family: $heading-font-stack;
 
@@ -128,7 +128,7 @@
         position: relative;
         display: block;
         margin-top: 40px;
-        content: url('../images/slider-anchor.svg');
+        content: url('../assets/images/slider-anchor.svg');
       }
     }
 

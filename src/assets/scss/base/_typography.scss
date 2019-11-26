@@ -11,7 +11,7 @@
     color: $superlight-grey;
 
     &::after {
-      content: url('../images/zigzag-light.svg');
+      content: url('../assets/images/zigzag-light.svg');
     }
   }
 
@@ -19,7 +19,7 @@
     color: $dark-grey;
 
     &::after {
-      content: url('../images/zigzag.svg');
+      content: url('../assets/images/zigzag.svg');
     }
   }
 

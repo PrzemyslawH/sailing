@@ -8,7 +8,7 @@ To do:
 
 ## Sailing html template
 
-http://smartweb.smarthost.pl/phennig/sailing
+http://smartweb.smarthost.pl/sailing
 
 ### `gulp`
 

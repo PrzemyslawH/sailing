@@ -6,6 +6,10 @@
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 50% 1fr 1fr;
+
+    @media (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__heading {
@@ -34,6 +38,10 @@
     font-size: 12px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $bp-small) {
+      display: block;
+    }
   }
 
   &__contact-details {

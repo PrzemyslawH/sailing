@@ -8,6 +8,10 @@
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 
+  @media (max-width: $bp-small) {
+    width: 100%;
+  }
+
   &--primary {
     color: $superlight-grey;
     background: $brand-color;

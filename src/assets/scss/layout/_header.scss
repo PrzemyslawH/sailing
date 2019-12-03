@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
-
 .header {
   height: 100px;
   font-family: $heading-font-stack;
@@ -12,9 +8,9 @@
 .logo {
   &__background {
     z-index: 2;
-    width: 270px;
+    width: 240px;
     height: 200px;
-    clip-path: polygon(0 0, 270px 0, 270px 160px, 0 200px);
+    clip-path: polygon(0 0, 240px 0, 240px 160px, 0 200px);
     background-color: rgb(25, 41, 64);
     display: flex;
     justify-content: center;
@@ -31,29 +27,36 @@
     top: 100px;
     margin-left: 10px;
     text-align: center;
-    width: 270px;
+    width: 240px;
     height: 110px;
-    clip-path: polygon(0 0, 270px 0, 270px 70px, 0 110px);
+    clip-path: polygon(0 0, 240px 0, 240px 70px, 0 110px);
     background-color: rgba(25, 41, 64, 0.2);
   }
 }
 
 .main-menu {
   font-size: 12px;
+  font-weight: 400;
   letter-spacing: 3px;
   line-height: 18px;
   text-transform: uppercase;
 
+  @media (max-width: $bp-medium) {
+    display: none;
+  }
+
   &__list {
     padding: 0;
     margin: 0;
+    height: 100%;
     display: flex;
+    align-items: center;
   }
 
   &__item {
     list-style-type: none;
     text-decoration: none;
-    padding: 44px 30px 0;
+    padding: 15px 30px;
   }
 
   &__link {
@@ -62,7 +65,7 @@
     position: relative;
 
     &::after {
-      content: url('../images/zigzag.svg');
+      content: url('../assets/images/zigzag.svg');
       position: absolute;
       display: block;
       bottom: -15px;
@@ -75,6 +78,59 @@
     &:hover::after {
       transform: translateY(5px);
       opacity: 1;
+    }
+  }
+}
+
+.mobile-button {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  z-index: 100;
+  position: relative;
+
+  @media (min-width: $bp-medium) {
+    display: none;
+  }
+
+  &__box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__inner {
+    width: 100%;
+    height: 2px;
+    background-color: $secondary-color;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: background-color .2s ease-in-out;
+
+    &::before,
+    &::after {
+      width: 100%;
+      height: 2px;
+      background-color: $secondary-color;
+      position: absolute;
+      transition: transform .2s ease-in-out;
+      content: '';
+      left: 0;
+    }
+
+    &::before {
+      top: -10px;
+      transform: translateY(0) rotate(0);
+    }
+
+    &::after {
+      top: 10px;
+      transform: translateY(0) rotate(0);
     }
   }
 }

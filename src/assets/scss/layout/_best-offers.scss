@@ -10,7 +10,7 @@
   }
 
   &__title {
-    font-size: 42px;
+    font-size: 36px;
     margin-top: 0;
   }
 
@@ -23,8 +23,7 @@
     opacity: 0.8;
   }
 
-  &__thumbnails {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
   }
 }

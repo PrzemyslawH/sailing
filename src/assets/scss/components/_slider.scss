@@ -1,5 +1,5 @@
 .slider {
-  background: url('../images/slider-bg.jpg') no-repeat center;
+  background: url('../assets/images/slider-bg.jpg') no-repeat center;
   height: 700px;
   font-family: $heading-font-stack;
 
@@ -28,6 +28,10 @@
       bottom: 0;
       right: 20px;
       display: -webkit-box;
+
+      @media (max-width: $bp-small) {
+        display: none;
+      }
 
       &::after {
         content: '';
@@ -69,9 +73,9 @@
   }
 
   &__button {
-    width: 270px;
+    width: 240px;
     height: 120px;
-    clip-path: polygon(0 40px, 270px 0, 270px 120px, 0 120px);
+    clip-path: polygon(0 40px, 240px 0, 240px 120px, 0 120px);
     background-color: $secondary-color;
     font-family: $heading-font-stack;
     border: none;
@@ -94,9 +98,9 @@
     }
 
     &--shadow {
-      width: 270px;
+      width: 240px;
       height: 90px;
-      clip-path: polygon(0 40px, 270px 0, 270px 90px, 0 90px);
+      clip-path: polygon(0 40px, 240px 0, 240px 90px, 0 90px);
       background-color: $secondary-color;
       opacity: 0.2;
       position: absolute;
@@ -128,12 +132,12 @@
         position: relative;
         display: block;
         margin-top: 40px;
-        content: url('../images/slider-anchor.svg');
+        content: url('../assets/images/slider-anchor.svg');
       }
     }
 
     &--big {
-      font-size: 50px;
+      font-size: 46px;
       letter-spacing: 4px;
       line-height: 60px;
       font-weight: 700;

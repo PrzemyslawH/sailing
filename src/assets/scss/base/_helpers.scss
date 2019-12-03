@@ -11,6 +11,10 @@
   border-top: $thin-line 1px solid;
 }
 
+.full-image {
+  width: 100%;
+}
+
 .line {
   border-top: none;
 
@@ -21,34 +25,11 @@
 
 .container {
   width: 100%;
+  max-width: 1140px;
   padding-right: 30px;
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
 }
 
 .card {
@@ -77,9 +58,17 @@
 
   &--col-2 {
     grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    }
   }
 
   &--col-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
   }
 }

@@ -51,7 +51,7 @@ gulp.task('sass', () => {
     .pipe(autoprefixer())
     .pipe(minifyCss())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(dist_assets_folder + 'css'))
+    .pipe(gulp.dest(dist_folder + 'css'))
     .pipe(browserSync.stream());
 });
 

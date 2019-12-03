@@ -11,6 +11,10 @@
   border-top: $thin-line 1px solid;
 }
 
+.full-image {
+  width: 100%;
+}
+
 .line {
   border-top: none;
 
@@ -54,9 +58,17 @@
 
   &--col-2 {
     grid-template-columns: repeat(2, 1fr);
+
+    @media (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    }
   }
 
   &--col-3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
   }
 }

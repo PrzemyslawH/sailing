@@ -8,9 +8,9 @@
 .logo {
   &__background {
     z-index: 2;
-    width: 270px;
+    width: 240px;
     height: 200px;
-    clip-path: polygon(0 0, 270px 0, 270px 160px, 0 200px);
+    clip-path: polygon(0 0, 240px 0, 240px 160px, 0 200px);
     background-color: rgb(25, 41, 64);
     display: flex;
     justify-content: center;
@@ -27,9 +27,9 @@
     top: 100px;
     margin-left: 10px;
     text-align: center;
-    width: 270px;
+    width: 240px;
     height: 110px;
-    clip-path: polygon(0 0, 270px 0, 270px 70px, 0 110px);
+    clip-path: polygon(0 0, 240px 0, 240px 70px, 0 110px);
     background-color: rgba(25, 41, 64, 0.2);
   }
 }
@@ -65,7 +65,7 @@
     position: relative;
 
     &::after {
-      content: url('../images/zigzag.svg');
+      content: url('../assets/images/zigzag.svg');
       position: absolute;
       display: block;
       bottom: -15px;
